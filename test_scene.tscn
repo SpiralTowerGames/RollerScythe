@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://csmexh5ifthsb"]
+
+[ext_resource type="PackedScene" uid="uid://cnyxertans3so" path="res://player.tscn" id="1_35hwk"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_81370"]
+
+[node name="TestScene" type="Node3D"]
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map"]
+transform = Transform3D(14.72, 0, 0, 0, 1, 0, 0, 0, 13.775, 0, 0, 0)
+mesh = SubResource("PlaneMesh_81370")
+
+[node name="Player" parent="." instance=ExtResource("1_35hwk")]
